@@ -158,11 +158,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1877740161113332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433768df1335da245b6786a0798e1740, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bc47a76efbc37046b774586c72c49ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  shootInterval: 0.5
+  bulletPrefab: {fileID: 1877740161113332}
+  shootIntervalCircle: 0.5
+  shootIntervalSpiral: 0.1
+  shootIntervalStar: 1
   bulletsPerWave: 10
   bulletSpeed: 5
   radius: 1
+  shootingDuration: 10
+  numberOfSpirals: 5
