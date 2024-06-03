@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BulletHellShooter : MonoBehaviour
+public class BulletShooter : MonoBehaviour
 {
     public GameObject bulletPrefab;  // Prefab de la bala
     public float shootIntervalCircle = 0.5f;  // Intervalo de disparo en círculo en segundos
