@@ -17,7 +17,7 @@ public class BulletShooter : MonoBehaviour
 
     private void Start()
     {
-        shootingCoroutine = StartCoroutine(ShootBulletsInCircle(shootingDuration));
+        shootingCoroutine = StartCoroutine(ShootBulletsInStar(shootingDuration));
     }
 
     private IEnumerator ShootBulletsInCircle(float duration)
@@ -73,7 +73,6 @@ public class BulletShooter : MonoBehaviour
             yield return new WaitForSeconds(shootIntervalSpiral);
         }
 
-        shootingCoroutine = StartCoroutine(ShootBulletsInStar(shootingDuration));
     }
 
     private void ShootSpiral(float angle)
@@ -96,6 +95,8 @@ public class BulletShooter : MonoBehaviour
             ShootStar();
             yield return new WaitForSeconds(shootIntervalStar);
         }
+        shootingCoroutine = StartCoroutine(ShootBulletsInCircle(shootingDuration));
+
     }
 
     private void ShootStar()
